@@ -1,0 +1,635 @@
+body {
+    padding-top: 76px; /* Espaço para o menu fixo */
+    font-family: Arial, sans-serif;
+}
+
+.py-5 {
+    padding: 3rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+.navbar-nav.ml-auto .nav-link {
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #1ebea5;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav.ml-auto .nav-link:hover {
+    color: #0056b3;
+}
+
+.header-bg {
+    background: url('/image/background\ sorriso.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.fixed-width-column {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin: 1rem;
+}
+
+.header-content {
+    text-align: right;
+    margin-right: 200px;
+}
+
+.header-content h3 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.accordion .card {
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.accordion .card-header {
+    background-color: #1ebea5;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+}
+
+.accordion .btn-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.accordion .btn-link:hover {
+    text-decoration: none;
+}
+
+.accordion .collapse.show {
+    border-top: none;
+}
+
+.contact-form-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form-section .form-control:focus, 
+.accordion .btn-link:focus {
+    box-shadow: none;
+}
+
+.title-main {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.title-sub {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.custom-btn {
+    background-color: #1ebea5;
+    border-color: #1ebea5;
+    font-size: 1.25rem;
+}
+
+.custom-btn:hover {
+    background-color: #17a293;
+    border-color: #17a293;
+}
+
+.header-content .btn {
+    border-radius: 50px;
+}
+
+.news-events {
+    background-color: #f9f9f9;
+}
+
+.news-events h2 {
+    font-size: 2em;
+}
+
+.news-events p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.news-events article {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo da seção com fundo degradê */
+.gradient-section {
+    background: linear-gradient(to top, #ffffff, #85f5e4);
+    padding: 50px 0;
+}
+
+/* Centralização dos títulos e subtítulos */
+.gradient-section h2,
+.gradient-section p {
+    text-align: center;
+}
+
+/* Garantir que o container do grid utilize 100% da largura disponível */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Alinhamento e espaçamento das colunas dentro da linha */
+.row {
+    justify-content: center;
+}
+
+.content-box {
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.content-box:hover {
+    transform: scale(1.05);
+}
+
+.content-box img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-box h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.content-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-box ul li {
+    margin-bottom: 5px;
+}
+
+/* Ajusta o padding das colunas */
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-section .content-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gradient-section .content-box .image-container {
+    position: relative;
+    width: 80%;
+    max-width: 100px;
+    padding-top: 80%;
+    margin: 0 auto 20px;
+}
+
+.gradient-section .content-box .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.btn-whatsapp {
+    background-color: #1ebea5;
+    border-color: #1ebea5;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #17a293;
+    border-color: #17a293;
+}
+
+
+.gradient-section .content-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.gradient-section .content-box h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.gradient-section .content-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gradient-section .content-box ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Estilo da seção de agendamento */
+.schedule-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.image-darken {
+    transition: all 0.3s ease;
+}
+
+.image-darken:hover {
+    filter: brightness(50%);
+}
+
+/* Estilo do botão */
+.schedule-section .btn {
+    background-color: #1ebea5;
+    border-color: #1ebea5;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Estilo do ícone dentro do botão */
+.schedule-section .btn i {
+    margin-right: 8px;
+}
+
+/* Estilo do botão ao passar o mouse */
+.schedule-section .btn:hover {
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+/* Estilo da seção Espaço Odontológico */
+.dental-space-section {
+    background: linear-gradient(to right, #ffffff, #85f5e4);
+    padding: 50px 0;
+}
+
+/* Estilo do texto da coluna esquerda */
+.text-content {
+    padding: 15px;
+}
+
+/* Estilo das imagens na coluna direita */
+.dental-space-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo da seção de contato */
+.contact-section {
+    padding: 50px 0;
+}
+
+/* Estilo do mapa do Google Maps */
+.map-container iframe {
+    border-radius: 10px;
+}
+
+/* Estilo das informações de contato */
+.contact-info {
+    padding: 15px;
+}
+
+/* Estilo do título e subtítulo */
+.contact-info h2 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+.contact-info .subtitle {
+    font-size: 1.25em;
+    color: #1ebea5;
+    margin-bottom: 10px;
+}
+
+/* Estilo da linha azul */
+.contact-info .blue-line {
+    border: none;
+    height: 2px;
+    background-color: #1ebea5;
+    margin-bottom: 15px;
+}
+
+/* Estilo do horário de atendimento */
+.contact-info .schedule {
+    margin-bottom: 20px;
+    font-size: 1.125em;
+}
+
+/* Estilo do botão */
+.contact-info .btn {
+    border-radius: 50px;
+}
+
+.content-box h4,
+.content-box p,
+.content-box ul {
+    text-align: left;
+}
+
+.list-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.list-icons li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.list-icons li i {
+    margin-right: 10px;
+    color: #1ebea5;
+    font-size: 0.6em;
+}
+
+#contato p {
+    margin-bottom: 10px;
+}
+
+#contato .subtitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contato .schedule {
+    margin-bottom: 5px;
+}
+
+#contato .blue-line {
+    border-top: 2px solid #1ebea5;
+    margin-bottom: 10px;
+}
+
+
+/* Estilo do rodapé */
+.footer-section {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.footer-section h5 {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.875em;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #007bff;
+}
+
+.footer-section .social-icons a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-section .fa-lg {
+    font-size: 1.5em;
+}
+
+.footer-section .text-center p {
+    margin-bottom: 0;
+}
+
+.footer-section .text-center p a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section .text-center p a:hover {
+    color: #007bff;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .navbar-nav.ml-auto {
+        flex-direction: column;
+    }
+    .navbar-nav.ml-auto .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+    .header-bg {
+        height: 300px;
+    }
+    .header-content h3 {
+        font-size: 1.2em;
+    }
+    .social-icons {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 0.875em; /* Diminui o tamanho da fonte */
+    }
+    .navbar-nav.ml-auto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav.ml-auto .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 1.5em; /* Aumenta o tamanho dos ícones das mídias sociais */
+    }
+    .navbar-brand img {
+        width: 30px; /* Diminui o tamanho da logo */
+        height: 30px; /* Diminui o tamanho da logo */
+    }
+    .header-bg {
+        height: 250px; /* Ajusta a altura do header */
+    }
+    .header-content h3 {
+        font-size: 1em; /* Ajusta o tamanho do texto no header */
+    }
+    .social-icons {
+        order: 1; /* Reorganiza a ordem das mídias sociais */
+    }
+    .footer-section {
+        padding: 20px; /* Ajusta o padding do rodapé */
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+    .header-bg {
+        height: 200px;
+    }
+    .header-content h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        margin-bottom: 8px; /* Ajusta o espaço entre os itens de menu */
+        font-size: 0.75em; /* Reduz o tamanho da fonte para telas menores */
+    }
+    .navbar-nav.ml-auto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav.ml-auto .nav-link {
+        margin-left: 0;
+        margin-bottom: 8px; /* Ajusta o espaço entre os ícones das mídias sociais */
+        font-size: 1.2em; /* Ajusta o tamanho dos ícones das mídias sociais */
+    }
+    .navbar-brand img {
+        width: 25px; /* Diminui o tamanho da logo */
+        height: 25px; /* Diminui o tamanho da logo */
+    }
+    .header-bg {
+        height: 200px; /* Ajusta a altura do header para telas pequenas */
+    }
+    .header-content h3 {
+        font-size: 0.9em; /* Ajusta o tamanho do texto no header */
+    }
+    .social-icons {
+        order: 1; /* Reorganiza a ordem das mídias sociais */
+        margin-top: 10px; /* Adiciona margem superior se necessário */
+    }
+    .footer-section {
+        padding: 10px; /* Ajusta o padding do rodapé para telas menores */
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        margin-bottom: 6px; /* Ajusta o espaço entre os itens de menu */
+        font-size: 0.75em; /* Mantém o tamanho da fonte reduzido para telas pequenas */
+    }
+    .navbar-nav.ml-auto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav.ml-auto .nav-link {
+        margin-left: 0;
+        margin-bottom: 6px; /* Ajusta o espaço entre os ícones das mídias sociais */
+        font-size: 1.1em; /* Ajusta o tamanho dos ícones das mídias sociais */
+    }
+    .navbar-brand img {
+        width: 20px; /* Diminui ainda mais o tamanho da logo */
+        height: 20px; /* Diminui ainda mais o tamanho da logo */
+    }
+    .header-bg {
+        height: 180px; /* Ajusta a altura do header para telas muito pequenas */
+    }
+    .header-content h3 {
+        font-size: 0.8em; /* Reduz o tamanho do texto no header */
+    }
+    .social-icons {
+        order: 1; /* Reorganiza a ordem das mídias sociais */
+        margin-top: 8px; /* Adiciona margem superior se necessário */
+    }
+    .footer-section {
+        padding: 8px; /* Ajusta o padding do rodapé para telas pequenas */
+    }
+}
+
