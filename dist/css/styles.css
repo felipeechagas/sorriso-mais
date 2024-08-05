@@ -64,7 +64,7 @@ body {
 
 .header-content {
     text-align: right;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 .header-content h3 {
@@ -500,44 +500,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .navbar-collapse {
-        text-align: center;
-    }
-    .navbar-nav {
-        flex-direction: column;
-    }
-    .navbar-nav .nav-item .nav-link {
-        margin-right: 0;
-        margin-bottom: 10px;
-        font-size: 0.875em; /* Diminui o tamanho da fonte */
-    }
-    .navbar-nav.ml-auto {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar-nav.ml-auto .nav-link {
-        margin-left: 0;
-        margin-bottom: 10px;
-        font-size: 1.5em; /* Aumenta o tamanho dos ícones das mídias sociais */
-    }
-    .navbar-brand img {
-        width: 30px; /* Diminui o tamanho da logo */
-        height: 30px; /* Diminui o tamanho da logo */
-    }
-    .header-bg {
-        height: 250px; /* Ajusta a altura do header */
-    }
-    .header-content h3 {
-        font-size: 1em; /* Ajusta o tamanho do texto no header */
-    }
-    .social-icons {
-        order: 1; /* Reorganiza a ordem das mídias sociais */
-    }
-    .footer-section {
-        padding: 20px; /* Ajusta o padding do rodapé */
-    }
-}
 
 
 @media (max-width: 576px) {
@@ -632,4 +594,152 @@ body {
         padding: 8px; /* Ajusta o padding do rodapé para telas pequenas */
     }
 }
+
+@media (max-width: 320px) {
+    /* Ajustes na barra de navegação */
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .navbar-collapse {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Ajustes no cabeçalho */
+    .header-bg {
+        display: flex;
+        
+        align-items: center; /* Centraliza verticalmente */
+        text-align: right;
+        padding: 10px;
+    }
+
+    .header-content {
+        max-width: 100%;
+    }
+
+    .header-content h3 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-whatsapp {
+        font-size: 12px;
+        padding: 5px 10px;
+        width: auto; /* Ajusta a largura do botão conforme o conteúdo */
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    /* Ajustes na seção de acordes */
+    .accordion-section h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .accordion .card-header .btn-link {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .accordion .card-body {
+        font-size: 12px;
+    }
+
+    /* Ajustes na seção de formulário de contato */
+    .contact-form-section h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        font-size: 12px;
+        background-color: #1ebea5;
+        border-color: #1ebea5;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    /* Ajustes na seção de contato */
+    #contato .contact-info h2 {
+        font-size: 18px;
+    }
+
+    #contato .subtitle {
+        font-size: 14px;
+    }
+
+    #contato .schedule {
+        font-size: 12px;
+    }
+
+    .btn-whatsapp {
+        font-size: 12px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajustes no rodapé */
+    .footer-section h5 {
+        font-size: 16px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+    }
+
+    .footer-section .social-icons .fa-lg {
+        font-size: 18px;
+    }
+
+    .footer-section .social-icons a {
+        margin-right: 5px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-section .row {
+        flex-direction: column;
+    }
+
+    .contact-section .col-md-6 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
 
